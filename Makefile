@@ -41,5 +41,11 @@ db:
 dbshell:
 	SETTINGS=$$PWD/etc/dev.conf bin/manage.py dbshell
 
+build-wheels:
+	pip wheel .
+	pip wheel -r requirements.txt
 
-.PHONY: clean install test server watch db single docs shell upgradedb migratedb dbshell test-server deps-linux upgrade wheelhouse prototype
+install-wheels:
+	pip install --use-wheel --find-links=wheelhouse --no-index -r requirements.txt
+
+.PHONY: clean install test server watch db single docs shell dbshell wheelhouse prototype build-wheels install-wheels

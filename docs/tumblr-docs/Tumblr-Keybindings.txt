@@ -1,0 +1,69 @@
+Keyboard shortcuts
+
+    Navigation
+    Scroll down
+    J
+    Scroll up
+    K
+    Back to the top
+    .
+    Like a post
+    L
+    View a post's notes
+    N
+    Open a post's blog
+    enter
+    Follow a recommended blog
+    F
+    Reject a recommended blog
+    X
+    Search Tumblr
+    tab
+    Switch between your blogs
+    Z + tab
+
+    Posting
+    Compose a new post
+    Z + C
+    Fast reblog a post
+    alt + R
+    Add a post to your queue
+    alt + E
+
+    Composing
+    Bold
+    ctrl + B
+    Italic
+    ctrl + I
+    Headline
+    ctrl + shift + 2
+    Link
+    ctrl + K
+    Strikethrough
+    ctrl + shift + 6
+    Ordered list
+    ctrl + shift + 7
+    Unordered list
+    ctrl + shift + 8
+    Blockquote
+    ctrl + shift + 9
+    Remove formatting
+    ctrl + shift + 0
+    Preformatted text
+    ctrl + shift + X
+    Superscript
+    ctrl + .
+    Subscript
+    ctrl + ,
+    Small
+    ctrl + shift + -
+    Insert photo
+    ctrl + shift + P
+    Insert video
+    ctrl + shift + M
+    Insert horizontal line
+    ctrl + shift + L
+    Insert read-more link
+    ctrl + shift + K
+    Insert GIF
+    ctrl + shift + G
