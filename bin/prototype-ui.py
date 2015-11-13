@@ -12,10 +12,8 @@ client = TumblrRestClient(
 )
 
 
-def show_dashboard():
-    tree = Tree(client.dashboard(type="text"))
-    post =\
-"""\
+tree = Tree(client.dashboard(type="text"))
+post = u"""\
 --------
 
 Username: {blog_name}
@@ -23,13 +21,12 @@ Date: {date}
 Post type: {type}
 
 :: {title} ::
- {body}
+{body}
 
 Tags: {tags}
 Notes: {note_count}
 URL: {post_url}
 """
-    return post.format(tree.execute("$.posts")[0])
 
 def scroll_up():
     txt.set_text("Scrolling up")
@@ -59,13 +56,11 @@ def show_key_or_exit(key):
     frame.footer = urwid.AttrWrap(urwid.Text(
         [u"Pressed: ", key.__repr__()]), 'header')
 
-text_header = (u"Ƹ̵̡❀ Ｔｅｒｍｂｌｒ ❀̵̨̄Ʒ\n(F8 to quit)")
+text_header = (u"Ƹ̵̡❀ Ｔｅｒｍｂｌｒ ❀̵̨̄Ʒ\n(up and down arrows to scroll, F8 to quit)")
 
-listbox_content =[
-    urwid.Divider(),
-    urwid.Text(u"This is a sample story", align='center'),
-    urwid.Divider(),
-]
+# [urwid.Text(post.format(**i), align='center') for i in tree.execute("$.posts")]
+listbox_content = [[urwid.Text(post.format(**i), align='center'), urwid.Divider()] for i in tree.execute("$.posts")]
+listbox_content = [i for s in listbox_content for i in s]
 
 
 header = urwid.AttrWrap(urwid.Text(text_header, align='center'), 'header')
