@@ -1,3 +1,11 @@
+<!-- MarkdownTOC -->
+
+- Termblr
+    - Installation
+    - Application Screenshot
+    - Contributing
+
+<!-- /MarkdownTOC -->
 # Termblr
 By Katie and Michael
 
@@ -9,6 +17,10 @@ mkvirtualenv -p `which python3` -a . Termblr
 ```bash
 make install
 ```
+
+## Application Screenshot
+### Termblr on 2015-11-13
+![Alt text](docs/screenshots/Screenshot_2015-11-13_06-02-18.png "Termblr on 2015-11-13")
 
 ## Contributing
 ### Our Toolchain

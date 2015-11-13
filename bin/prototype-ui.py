@@ -72,5 +72,6 @@ loop = urwid.MainLoop(
     palette=palette,
     screen=urwid.raw_display.Screen(),
     unhandled_input=show_key_or_exit,
+    handle_mouse=False,
 )
 loop.run()
