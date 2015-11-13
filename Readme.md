@@ -7,7 +7,7 @@
 
 <!-- /MarkdownTOC -->
 # Termblr
-By Katie and Michael
+By Michael Sarfati (michael.sarfati@utoronto.ca), 2015
 
 ## Installation
 ### Make Virtual Environment
@@ -25,7 +25,7 @@ make install
 ## Contributing
 ### Our Toolchain
 * [Py3Tumblr](https://github.com/dianakhuang/pytumblr/tree/diana/python-3-support) - Tumblr API wrapper compatible for Python 3
-* [ObjectPath](https://pypi.python.org/pypi/objectpath/) - a specification for sanely querying JSON
+* [ObjectPath](https://pypi.python.org/pypi/objectpath/) - a specification for sanely querying JSON and Python objects
     - [ObjectPath](https://github.com/adriank/ObjectPath) Python library
 * [urwid](http://urwid.org/) - Console interface toolkit
 * [Requests](http://docs.python-requests.org/en/latest/) - handles other web requests
