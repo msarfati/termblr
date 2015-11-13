@@ -22,4 +22,4 @@ make install
 ### Tools still requiring research
 * Rendering images into ANSI/ASCII art
 * Rendering videos into ANSI/ASCII
-
+* Render audio into 8bit
