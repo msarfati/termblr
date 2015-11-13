@@ -1,16 +1,22 @@
 SHELL=/bin/bash
 PROJECT_NAME=Termblr
-MOD_NAME=Termblr
+MOD_NAME=termblr
 TEST_CMD=SETTINGS=$$PWD/etc/testing.conf nosetests -w $(MOD_NAME)
 TEST_DUMP="./maketests.log"
 
 install:
 	python setup.py install
 
+prototype:
+	ipython -i bin/prototype.py
+
 clean:
 	rm -rf build dist *.egg-info
 	-rm `find . -name "*.pyc"`
 	find . -name "__pycache__" -delete
+
+wheelhouse:
+	python setup.py bdist_wheel
 
 server:
 	SETTINGS=$$PWD/etc/dev.conf bin/manage.py runserver
@@ -35,11 +41,5 @@ db:
 dbshell:
 	SETTINGS=$$PWD/etc/dev.conf bin/manage.py dbshell
 
-upgradedb:
-	SETTINGS=$$PWD/etc/dev.conf bin/manage.py db upgrade
 
-migratedb:
-	SETTINGS=$$PWD/etc/dev.conf bin/manage.py db migrate
-
-
-.PHONY: clean install test server watch db single docs shell upgradedb migratedb dbshell test-server deps-linux upgrade
+.PHONY: clean install test server watch db single docs shell upgradedb migratedb dbshell test-server deps-linux upgrade wheelhouse prototype
