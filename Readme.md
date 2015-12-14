@@ -1,12 +1,3 @@
-<!-- MarkdownTOC -->
-
-- Termblr
-    - Installation
-    - Application Screenshot
-    - Roadmap
-    - Contributing
-
-<!-- /MarkdownTOC -->
 # Termblr
 By Michael Sarfati (michael.sarfati@utoronto.ca), 2015
 
@@ -20,10 +11,12 @@ make install
 ```
 
 ## Application Screenshot
+
 ### Termblr on 2015-11-13
 ![Alt text](docs/screenshots/Screenshot_2015-11-13_06-02-18.png "Termblr on 2015-11-13")
 
 ## Roadmap
+
 ### Towards version 1 (Current)
 * Use of modular, clean and maintainable design pattern, and standardization of Termblr widgets and user conventions
 * Login form, streamlined API key acquisition process
@@ -47,6 +40,7 @@ make install
 * Support for other terminals (Windows console, Powershell, BusyBox, etc.)
 
 ## Contributing
+
 ### Our Toolchain
 * [Py3Tumblr](https://github.com/dianakhuang/pytumblr/tree/diana/python-3-support) - Tumblr API wrapper compatible for Python 3
 * [ObjectPath](https://pypi.python.org/pypi/objectpath/) - a specification for sanely querying JSON and Python objects

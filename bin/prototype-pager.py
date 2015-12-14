@@ -44,10 +44,10 @@ URL: {post_url}
         print(post.format(**i))
 
 client = TumblrRestClient(
-    consumer_key='iWpkjxQeBaFBpIvHTB0RbP7G5ozicNZ5FQtiMkkoKFkiJ4Cfjb',
-    consumer_secret='JfmKt6EJWOPdNs155kBrVC7AC8YO3V9RVJt73PcuU85E7buGsq',
-    oauth_token='ZoegVG4B9pTAFm3lI86bSueW8KVlr0PKOkxNsh4CqmwIMnLRcE',
-    oauth_secret='AkuR2qM8QNvEm62dQ8JbldxYicQJMvpxdOhfBQPALgsBWLrc7G',
+    'iWpkjxQeBaFBpIvHTB0RbP7G5ozicNZ5FQtiMkkoKFkiJ4Cfjb',
+    'JfmKt6EJWOPdNs155kBrVC7AC8YO3V9RVJt73PcuU85E7buGsq',
+    '7y6XDJDlRxjDAZfSRut6cGg0eWch24fcuAiWaKBM2by0HIXvcf',
+    'CVVnwpo7Hv5s2ULnhaZqPlt42uc3VlWYhEBibQhyzH7xdM6zWv'
 )
 
 dashboard = client.dashboard(type="text")
